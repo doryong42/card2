@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>정성훈 — 웹 명함</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <main class="card" id="card">
+      <div class="card__shine" aria-hidden="true"></div>
+
+      <header class="card__header">
+        <div class="avatar" role="img" aria-label="캐릭터 프로필 일러스트">
+          <svg class="avatar__svg" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+            <!-- 후드 -->
+            <path
+              class="hood"
+              d="M40 118 Q20 95 35 72 Q55 38 100 32 Q145 38 165 72 Q180 95 160 118 L155 200 Q100 215 45 200 Z"
+            />
+            <path class="hood-inner" d="M52 115 Q100 125 148 115 L142 188 Q100 198 58 188 Z" />
+            <!-- 얼굴 -->
+            <ellipse class="face" cx="100" cy="88" rx="48" ry="52" />
+            <!-- 볼 홍조 -->
+            <ellipse class="cheek cheek--l" cx="72" cy="98" rx="10" ry="6" />
+            <ellipse class="cheek cheek--r" cx="128" cy="98" rx="10" ry="6" />
+            <!-- 눈 -->
+            <ellipse class="eye eye--l" cx="82" cy="82" rx="8" ry="10" />
+            <ellipse class="eye eye--r" cx="118" cy="82" rx="8" ry="10" />
+            <circle class="pupil pupil--l" cx="84" cy="84" r="4" />
+            <circle class="pupil pupil--r" cx="120" cy="84" r="4" />
+            <circle class="sparkle sparkle--l" cx="86" cy="81" r="2" />
+            <circle class="sparkle sparkle--r" cx="122" cy="81" r="2" />
+            <!-- 안경 -->
+            <g class="glasses" fill="none" stroke-width="2.5" stroke-linecap="round">
+              <rect x="64" y="72" width="28" height="22" rx="6" />
+              <rect x="108" y="72" width="28" height="22" rx="6" />
+              <path d="M92 83 H108" />
+              <path d="M64 78 L52 74" />
+              <path d="M136 78 L148 74" />
+            </g>
+            <!-- 코 -->
+            <path class="nose" d="M100 92 Q96 100 100 104" fill="none" stroke-linecap="round" />
+            <!-- 입 -->
+            <path class="mouth" d="M88 112 Q100 122 112 112" fill="none" stroke-linecap="round" />
+            <!-- 머리카락 (이마 쪽만 덮어 안경과 겹치지 않게) -->
+            <path
+              class="hair"
+              d="M54 70 Q50 48 76 34 Q100 26 124 34 Q150 48 146 70 Q138 56 100 46 Q62 56 54 70 Z"
+            />
+          </svg>
+        </div>
+        <div class="card__titles">
+          <p class="eyebrow">Web Business Card</p>
+          <h1 class="name">정성훈</h1>
+          <p class="role">바이브코딩 풀스택 개발자</p>
+        </div>
+      </header>
+
+      <p class="tagline" id="tagline">
+        아이디어를 빠르게 구현하고, 함께 일할 때 편안한 협업을 만드는 개발자입니다.
+      </p>
+
+      <ul class="contacts" aria-label="연락처">
+        <li>
+          <span class="contacts__label">이메일</span>
+          <a class="contacts__value" href="mailto:oops3445@gmail.com">oops3445@gmail.com</a>
+          <button type="button" class="btn-copy" data-copy="oops3445@gmail.com" aria-label="이메일 복사">
+            복사
+          </button>
+        </li>
+        <li>
+          <span class="contacts__label">전화</span>
+          <a class="contacts__value" href="tel:+821089059258">010-8905-9258</a>
+          <button type="button" class="btn-copy" data-copy="010-8905-9258" aria-label="전화번호 복사">
+            복사
+          </button>
+        </li>
+      </ul>
+
+      <div class="social" aria-label="소셜">
+        <a
+          class="btn-youtube"
+          href="https://www.youtube.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="유튜브 채널 @ai-study (새 탭에서 열림)"
+        >
+          <span class="btn-youtube__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill="currentColor"
+                d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1 31.5 31.5 0 0 0 .5-5.8 31.5 31.5 0 0 0-.5-5.8zM9.7 15.5V8.5L15.8 12l-6.1 3.5z"
+              />
+            </svg>
+          </span>
+          <span class="btn-youtube__text">유튜브</span>
+          <span class="btn-youtube__hint" aria-hidden="true">새 탭</span>
+        </a>
+      </div>
+
+      <p class="toast" id="toast" role="status" aria-live="polite"></p>
+
+      <footer class="card__footer">
+        <span class="mono">Made with HTML · CSS · JS</span>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
